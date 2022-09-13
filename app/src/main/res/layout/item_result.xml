@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  Copyright 2016 Google Inc. All Rights Reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/listening"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@color/status_not_hearing"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="1dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/tv_origin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FEE6E6E6"
+                android:paddingStart="4dp"
+                android:paddingTop="@dimen/spacing_small"
+                android:paddingEnd="4dp"
+                android:paddingBottom="@dimen/spacing_small"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                tools:text="It is fine today." />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="1dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/tv_translate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FEE6E6E6"
+                android:paddingStart="4dp"
+                android:paddingTop="@dimen/spacing_small"
+                android:paddingEnd="4dp"
+                android:paddingBottom="@dimen/spacing_small"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                tools:text="It is fine today." />
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
